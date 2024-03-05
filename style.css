@@ -1,0 +1,105 @@
+/* 
+Colors 
+White: E7F1F8
+
+
+*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+/* Temporary Styles for structural html */
+
+section{
+    border: 1px solid rgb(225,225,225);
+}
+body{
+    font-family: 'lato', sans-serif;
+    color: #336B87;
+}
+
+/* Image styles */
+.bg-image{
+    background-image: url('/images/access-the-alpine-landscape-baker-summit.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 10rem;
+
+}
+
+/* Universal Styles and utility classes */
+.padded         {padding: 5%;}
+.padded-sm      {padding: 1rem;}
+.bg-dark {
+    background-color: #152229;
+    color: white;
+}
+.tall-50 {min-height: 50vh;}
+.tall-60 {min-height: 60vh;}
+.tall-70 {min-height: 70vh;}
+.tall-80 {min-height: 80vh;}
+.tall-90 {min-height: 90vh;}
+.tall-100 {min-height: 100vh;}
+
+p last-child {margin-bottom: 0};
+/* Typography Styles */
+.text-left      {text-align: left;}
+.text-center    {text-align: center;}
+.text-right     {text-align: right;}
+
+.featured-text{color:#d1dc89;}
+.white-text{color:#ffffff;}
+.small-text{font-size: 1.5rem;}
+.big-text{font-size: 5rem;}
+
+.font-weight-normal {font-weight:normal;}
+.font-weight-light {font-weight:300;}
+.font-weight-extra-bold {font-weight:800;}
+
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+h3{
+    line-height: 1;
+}
+p{
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 1 rem;
+}
+/* Header Styles */
+header{
+    background-image: url('/images/access-the-alpine-landscape-baker-summit.jpg');
+    background-size: cover;
+    background-position: center;
+}
+header h3{
+    font-size: 3rem;
+    color: #152229;
+    font-weight: 500;
+}
+
+
+/* Background Images */
+.bg-hiker{
+    background-image:url("/images/access-the-alpine-hiker.jpg");
+    background-position: 50% 70%;
+}
+.bg-crevasse{background-image: url("/images/access-the-alpine-crevasse-look-down.jpg");}
+.bg-rope{background-image: url("/images/access-the-alpine-climber-rope.jpg");}
+.bg-moraine{
+    background-image: url("/images/access-the-alpine-landscape-moraine.jpg");
+    background-position: center;
+}
+
+
+/* Icon grid */
+.fa-solid{
+    display: block;
+    text-align:center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
