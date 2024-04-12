@@ -1,8 +1,6 @@
 /* 
 Colors 
 White: E7F1F8
-
-
 */
 *{
     box-sizing: border-box;
@@ -110,7 +108,7 @@ header div{
 header div span{
     border-bottom: 1px solid white;
     font-weight: 300;
-    /* text-transform: capitalize; */
+    text-transform: uppercase;
 }
 
 header a:hover{
