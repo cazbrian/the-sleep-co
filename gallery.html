@@ -1,29 +1,49 @@
 ---
 layout: default
+gallery:
+ - column-size: col-6
+   aspect-ratio: portrait
+   background-image: /images/access-the-alpine-hiker.jpg
+ - column-size: col-6
+   aspect-ratio: portrait
+   background-image: /images/access-the-alpine-hiker.jpg
+ - column-size: col-12
+   aspect-ratio: landscape
+   background-image: /images/access-the-alpine-hiker.jpg
 ---
 
 <header class="padded grid text-center tall-80 editable">
     {% include header-nav.html %}
 </header>
-<section>
+<section class="padded">
     <div class="gallery grid">
-        <div class="col-6">
-          <div class="bg-image square bg-img-1"></div>
+        {% for item in page.gallery %}
+        <div class="{{item.column-size}}">
+            <div class="bg-image {{item.aspect-ratio}}" 
+                 style="background-image: url('{{item.background-image}}');">
+            </div>
         </div>
-        <div class="col-6">
-          <div class="bg-image square bg-img-2 bg-pos-b"></div>
-        </div>
-        <div class="col-4_xs-12">
-          <div class="bg-image portrait-tall bg-img-3"></div>
-        </div>
-        <div class="col-4_xs-12">
-          <div class="bg-image portrait-tall bg-img-4"></div>
-        </div>
-        <div class="col-4_xs-12">
-          <div class="bg-image portrait-tall "></div>
-        </div>
-        <div class="col-12">
-          <div class="bg-image landscape bg-img-5"></div>
-        </div>
+        {% endfor %}
     </div>
 </section>
+
+<!-- <div class="gallery grid">
+    <div class="col-6">
+      <div class="bg-image square bg-img-1"></div>
+    </div>
+    <div class="col-6">
+      <div class="bg-image square bg-img-2 bg-pos-b"></div>
+    </div>
+    <div class="col-4_xs-12">
+      <div class="bg-image portrait-tall bg-img-3"></div>
+    </div>
+    <div class="col-4_xs-12">
+      <div class="bg-image portrait-tall bg-img-4"></div>
+    </div>
+    <div class="col-4_xs-12">
+      <div class="bg-image portrait-tall "></div>
+    </div>
+    <div class="col-12">
+      <div class="bg-image landscape bg-img-5"></div>
+    </div>
+</div> -->

@@ -131,7 +131,10 @@ header h3{
     font-weight: 500;
     margin-bottom: 0;
 }
-
+/* Image Gallery */
+.gallery [class*="col-"] {
+    padding:0.5%;
+}
 
 /* Background Images */
 .bg-hiker{
