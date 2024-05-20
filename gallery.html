@@ -29,7 +29,10 @@ gallery:
 <header class="padded grid text-center tall-80 editable">
     {% include header-nav.html %}
 </header>
+
 <section class="padded">
+
+  <!-- popup gallery -->
     <div class="gallery grid" id="lightgallery">
         {% for item in page.gallery %}
         <a class="{{item.column-size}}" href="{{item.background_image}}">
@@ -39,6 +42,8 @@ gallery:
         {% endfor %}
     </div>
 </section>
+
+<!-- standard gallery -->
 
 <!-- <div class="gallery grid">
     <div class="col-6">

@@ -7,3 +7,5 @@ lightGallery(document.getElementById('lightgallery'), {
     download: false
     
 });
+
+ 
